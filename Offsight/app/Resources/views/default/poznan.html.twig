@@ -7,19 +7,34 @@
         <link rel="icon" type="image/x-icon" href="" />
         <link rel="stylesheet" type="text/css" href="{{ asset('css/PoznanPage.css') }}" />
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7A9RN0emXJmj7OJjZG3IzxVPGXACcSRs&callback=initMap" type="text/javascript"></script>
+
     </head>
     <body>
         <div class="PoznanHeader">
           <img src="/img/header.png" class="HeaderImage" />
         </div>
         <div class="PoznanInfo">
-          Info
+          <p class="PoznanParagraph">
+            Co?
+          </p>
         </div>
         <div class="PoznanForm">
-          Zapisz się
+          <p class="PoznanParagraph">
+            Jak się zgłosić?
+          </p>
         </div>
         <div class="PoznanMap">
-          Map
+          <div>
+
+          <p class="PoznanParagraph">
+            Gdzie?
+          </p>
+         </div>
+         <div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1216.95448341497!2d16.92435509811735!3d52.40832605265624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd8b8d15cc295ac5b!2sMalta+Festival+Pozna%C5%84!5e0!3m2!1spl!2spl!4v1502057229892" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
         </div>
         {% block javascripts %}{% endblock %}
     </body>

@@ -23,6 +23,7 @@
   left: 0;
   margin: 0 auto;
   background-color: white;
+  text-align: center;
 }
 .PoznanForm{
   display: flex;
@@ -38,9 +39,6 @@
   background-color: white;
 }
 .PoznanMap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   min-height: 50vh;
   max-height: 10%;
@@ -49,4 +47,9 @@
   left: 0;
   margin: 0 auto;
   background-color: white;
+  text-align: center;
+}
+.PoznanParagraph{
+  font-family: 'Oswald';
+  font-size: 50px;
 }
