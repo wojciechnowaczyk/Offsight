@@ -6,16 +6,29 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="" />
         <link rel="stylesheet" type="text/css" href="{{ asset('css/HomePage.css') }}" />
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     </head>
     <body>
         <div class="FirstLocation">
-          <div class="FirstLocationHeader">First Location Header</div>
+          <div class="FirstLocationHeader">
+            <h1 class="LocationHeader">POZNAŃ</h1>
+            <p class="DateParagraph">20.10.2017</p>
+            <button class="MoreButton" type="button">WIĘCEJ</button>
+          </div>
         </div>
         <div class="SecondLocation">
-          <div class="SecondLocationHeader">Second Location Header</div>
+          <div class="SecondLocationHeader">
+            <h1 class="LocationHeader">WROCŁAW</h1>
+            <p class="DateParagraph">WKRÓTCE</p>
+            <button class="MoreButton" type="button">WIĘCEJ</button>
+          </div>
         </div>
         <div class="ThirdLocation">
-          <div class="ThirdLocationHeader">Third Location Header</div>
+          <div class="ThirdLocationHeader">
+            <h1 class="LocationHeader">ŁÓDŹ</h1>
+            <p class="DateParagraph">WKRÓTCE</p>
+            <button class="MoreButton" type="button">WIĘCEJ</button>
+          </div>
         </div>
         {% block javascripts %}{% endblock %}
     </body>
