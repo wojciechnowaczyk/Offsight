@@ -1,0 +1,52 @@
+.PoznanHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  max-height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+.PoznanInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  max-height: 10%;
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+.PoznanForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  max-height: 10%;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+.PoznanMap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  max-height: 10%;
+  position: absolute;
+  top: 150vh;
+  left: 0;
+  margin: 0 auto;
+  background-color: white;
+}

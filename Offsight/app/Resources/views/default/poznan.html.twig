@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Offsight{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/PoznanPage.css') }}" />
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="PoznanHeader">
+          <img src="/img/header.png" class="HeaderImage" />
+        </div>
+        <div class="PoznanInfo">
+          Info
+        </div>
+        <div class="PoznanForm">
+          Zapisz się
+        </div>
+        <div class="PoznanMap">
+          Map
+        </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
