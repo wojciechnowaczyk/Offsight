@@ -89,3 +89,27 @@
   border: 5px solid rgb(244, 204, 11);
   font-weight: bold;
 }
+.AboutUs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  position: absolute;
+  top: 300vh;
+  left: 0;
+  margin: 0 auto;
+  background-image: url('/img/field.jpg');
+  background-size: 100%;
+
+}
+.AboutUsHeader{
+  width: 50%;
+  text-align: center;
+  background-color: rgba(255,103,0, 0.7);
+}
+.AboutHeader{
+  font-family: 'Oswald';
+  font-size: 50px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Offsight{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/AboutPage.css') }}" />
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7A9RN0emXJmj7OJjZG3IzxVPGXACcSRs&callback=initMap" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div class="PoznanHeader">
+          <a href={{path('home')}}><img src="/img/header.png" class="HeaderImage" /></a>
+        </div>
+        <div class="FirstPerson">
+          <div class="FirstLeft">
+            <div>
+              <p class="Name">
+              Jan Radomski
+            </p>
+          </div>
+            <div class="SocialNav">
+
+            <ul class="social-nav">
+
+           <li><a href="https://www.facebook.com/jan.radomski.7?fref=ts" target="_blank"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAzUlEQVRIie3WMWoCQRQG4K/1JpLcwwPY2aVNE7ZUL5DCwgukk3TJCbQSK3FFjEewlFSBdGsKtwqzuDvudA686jH/Nw8GZuARWxQ4t1QFcjwow9sK/l+5yJMv8YohRhjjs2KSRsE/6Amvp4o9jYDnivBWgF90UgL7QOgLvnDA8VZgEwDmNfbdBCzaAHbIMAgA/bKXYRYLfASCQytLDUxSA++xwAkrvAVCp2Vvhe9YIPktugN34DpQ98mMAQouD3MqYM3la5HXmKQJUJTh3T/m0Lw3Dm4LCgAAAABJRU5ErkJggg=="/></a></li>
+
+           <li><a href="https://twitter.com/jwmrad" target="_blank"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABVklEQVRIibXWvS8EQRjH8Y+XhJDQoFdIxLlCJRKNSqKTaCh1olBqiE7hD5CoJCQ6hUZBgVZyRKFQaEWUJBJvd4pZ4s6+3LnzSybZ2X3m951ndp+ZhRwuUESpQa2IAoZE5o0yrmwFDZ55XCZ1GTzgMSOmrHNfpfEe+gU1YQLXeMYObpMAOexnmG+LVyfaMReBfgFeo8AWbCS8m1f0JACgI8pmNymD7h/BYzireH6VYv41uc2KMWWdhZhBeaziUFi+NPX5nfX3xQuOMZJhkqaBNMAHutBaB2AqDVDCYh3msJ4FeMJ4HYCbLEAJl5hBc43mkzFesYBToTprUYvkTTP25pZQldVqLcEnEVDCHVZkL9Ws8AXWBLjBsrC/pGkJ7ynmZYALTAvVmKU8jjKMYzN4wwHmMSwUXht6MRrN+ERth1TVgX9t/39kFv4RcE74tSg0OJNiZD74CT1hexa3SkmVAAAAAElFTkSuQmCC"></a></td></a></li>
+
+            <li><a href="https://www.instagram.com/jwmrad/" target="_blank"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABnUlEQVRIia3WT4hOURjH8Y+NKX8XaizYiWQWKLGzMMnGQlmiXu8YK2lWsiAU9SYipISJjR0ykSxZqpe1HWVhKdm6r8V5Zrpz57wz3fvep3517znP8/vec86951yYwBcUGLSkAn3sEuZtGVfVt8KTv0AHp9HFVGi6pKnon8bLzEgWbv7hSSVhxsqxDcdC+3G24rFw8QxHGwDelPJ/R9uHHKDbEPC2lP832q7kAJ2GgLlS/p9ouzQMcAjfS+pGwWHcxy3cxl3si76JqO1gcjnAO/QquoDLOIN1OBKwDbiIc7iWqfuUA8xga0UnpNfvAH6Vcn9iT5hPZupu5gCnMvM7i9X4YfHaDPAN6/EgU5edopOZxMfYnTGf1/bIaQyYDZNhgC2R0xjwHGMWL9q83mMc90YBHJQWclz6oAppS3mFTXiEHaMASK9iDxuxFmuwOcyPD6mpBYC9eChthk9xR9rkhkVtQN3IArrLVdSM6znA65bMV0kn2RLAAOdbMO9VPJccmR9xVZrHOrqBrxWvQmU4besz6deinxnJKCrCfOd/AvAvONa/slAAAAAASUVORK5CYII="></a></li>
+
+            </ul>
+          </div>
+
+
+          </div>
+          <div class="FirstRight">
+            <img class="PersonalPhotos" src="/img/radomski.jpg" class="HeaderImage" />
+          </div>
+        </div>
+        <div class="SecondPerson">
+          <div class="SecondLeft">
+            <img class="PersonalPhotos" src="/img/nowaczyk.jpg" class="HeaderImage" />
+          </div>
+          <div class="SecondRight">
+            <p class="Name">
+              Wojciech Nowaczyk
+            </p>
+            <div class="SocialNav">
+
+            <ul class="social-nav">
+
+           <li><a href="https://www.facebook.com/wojciech.nowaczyk.5" target="_blank"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAzUlEQVRIie3WMWoCQRQG4K/1JpLcwwPY2aVNE7ZUL5DCwgukk3TJCbQSK3FFjEewlFSBdGsKtwqzuDvudA686jH/Nw8GZuARWxQ4t1QFcjwow9sK/l+5yJMv8YohRhjjs2KSRsE/6Amvp4o9jYDnivBWgF90UgL7QOgLvnDA8VZgEwDmNfbdBCzaAHbIMAgA/bKXYRYLfASCQytLDUxSA++xwAkrvAVCp2Vvhe9YIPktugN34DpQ98mMAQouD3MqYM3la5HXmKQJUJTh3T/m0Lw3Dm4LCgAAAABJRU5ErkJggg=="/></a></li>
+
+           <li><a href="https://twitter.com/w_nowaczyk" target="_blank"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABVklEQVRIibXWvS8EQRjH8Y+XhJDQoFdIxLlCJRKNSqKTaCh1olBqiE7hD5CoJCQ6hUZBgVZyRKFQaEWUJBJvd4pZ4s6+3LnzSybZ2X3m951ndp+ZhRwuUESpQa2IAoZE5o0yrmwFDZ55XCZ1GTzgMSOmrHNfpfEe+gU1YQLXeMYObpMAOexnmG+LVyfaMReBfgFeo8AWbCS8m1f0JACgI8pmNymD7h/BYzireH6VYv41uc2KMWWdhZhBeaziUFi+NPX5nfX3xQuOMZJhkqaBNMAHutBaB2AqDVDCYh3msJ4FeMJ4HYCbLEAJl5hBc43mkzFesYBToTprUYvkTTP25pZQldVqLcEnEVDCHVZkL9Ws8AXWBLjBsrC/pGkJ7ynmZYALTAvVmKU8jjKMYzN4wwHmMSwUXht6MRrN+ERth1TVgX9t/39kFv4RcE74tSg0OJNiZD74CT1hexa3SkmVAAAAAElFTkSuQmCC"></a></td></a></li>
+
+            <li><a href="https://www.instagram.com/wojciech.nowaczyk/" target="_blank"><img class="social-media-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABnUlEQVRIia3WT4hOURjH8Y+NKX8XaizYiWQWKLGzMMnGQlmiXu8YK2lWsiAU9SYipISJjR0ykSxZqpe1HWVhKdm6r8V5Zrpz57wz3fvep3517znP8/vec86951yYwBcUGLSkAn3sEuZtGVfVt8KTv0AHp9HFVGi6pKnon8bLzEgWbv7hSSVhxsqxDcdC+3G24rFw8QxHGwDelPJ/R9uHHKDbEPC2lP832q7kAJ2GgLlS/p9ouzQMcAjfS+pGwWHcxy3cxl3si76JqO1gcjnAO/QquoDLOIN1OBKwDbiIc7iWqfuUA8xga0UnpNfvAH6Vcn9iT5hPZupu5gCnMvM7i9X4YfHaDPAN6/EgU5edopOZxMfYnTGf1/bIaQyYDZNhgC2R0xjwHGMWL9q83mMc90YBHJQWclz6oAppS3mFTXiEHaMASK9iDxuxFmuwOcyPD6mpBYC9eChthk9xR9rkhkVtQN3IArrLVdSM6znA65bMV0kn2RLAAOdbMO9VPJccmR9xVZrHOrqBrxWvQmU4besz6deinxnJKCrCfOd/AvAvONa/slAAAAAASUVORK5CYII="></a></li>
+
+            </ul>
+          </div>
+          </div>
+        </div>
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

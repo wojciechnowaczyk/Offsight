@@ -1,0 +1,113 @@
+.PoznanHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  max-height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+.FirstPerson{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: orange;*/
+  width: 100%;
+  min-height: 50vh;
+  max-height: 100%;
+  position: absolute;
+  top: 50vh;
+  left: 0;
+  margin: 0 auto;
+  background-size: 100%;
+}
+
+.SecondPerson{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: orange;*/
+  width: 100%;
+  min-height: 50vh;
+  max-height: 100%;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  margin: 0 auto;
+  background-size: 100%;
+}
+
+.FirstLeft{
+  width: 50%;
+  float: left;
+  min-height: 50vh;
+  max-height: 100%;
+  background-color: rgb(244, 204, 11);
+  align-items: center;
+  justify-content: center;
+}
+.FirstRight{
+  width: 50%;
+  float: right;
+  min-height: 50vh;
+  max-height: 100%;
+  background-color: rgb(255, 103, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SecondLeft{
+  width: 50%;
+  float: left;
+  min-height: 50vh;
+  max-height: 100%;
+  background-color: rgb(255, 103, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SecondRight{
+  width: 50%;
+  float: right;
+  min-height: 50vh;
+  max-height: 100%;
+  background-color: rgb(244, 204, 11);
+  align-items: center;
+  justify-content: center;
+}
+.Name{
+  font-family: 'Oswald';
+  font-size: 50px;
+  text-align: center;
+}
+.social-nav{
+  text-align: center;
+  margin-left: 35%;
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 35%;
+}
+.social-nav li{
+  float: left;
+}
+
+.social-nav li a{
+  display: block;
+
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+
+}
+
+.PersonalPhotos{
+  width: 40%;
+  height: 40%;
+
+}
