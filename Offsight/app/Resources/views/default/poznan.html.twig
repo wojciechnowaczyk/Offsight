@@ -1,3 +1,4 @@
+{% block body%}
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,7 +38,11 @@
           </p>
           <p>Koszt: 300 złotych netto / zespół</p>
           <button class="RegistrationButton" type="button"><a target="_blank" href="https://goo.gl/forms/P3BlBWMcpTa61UZY2">Zgłoś się</a></button>
-
+          <div id="ContactForm" style="width: 100%; height: 200px; position: absolute; top: 200vh">
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+          </div>
         </div>
         <div class="PoznanForm">
           <p class="PoznanParagraph">
@@ -59,3 +64,5 @@
         {% block javascripts %}{% endblock %}
     </body>
 </html>
+
+{% endblock %}
