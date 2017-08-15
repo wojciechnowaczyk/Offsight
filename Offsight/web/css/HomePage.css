@@ -15,11 +15,14 @@
   margin: 0 auto;
   background-image: url('/img/playstation1.jpeg');
   background-size: 100%;
-
-
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 
 }
+
 .FirstLocationHeader{
   width: 50%;
   text-align: center;
@@ -40,6 +43,12 @@
   margin: 0 auto;
   background-image: url('/img/playstation2.jpg');
   background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
 }
 .SecondLocationHeader{
 
@@ -62,6 +71,11 @@
   margin: 0 auto;
   background-image: url('/img/playstation3.jpg');
   background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 
 }
 .ThirdLocationHeader{
@@ -102,7 +116,11 @@
   margin: 0 auto;
   background-image: url('/img/field.jpg');
   background-size: 100%;
-
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center; 
 }
 .AboutUsHeader{
   width: 50%;

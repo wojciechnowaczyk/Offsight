@@ -45,13 +45,16 @@ class DefaultController extends Controller
           $em = $this->getDoctrine()->getManager();
           $em->persist($post);
           $em->flush();
+          $message='Nowa firma zapisała się na Offsight Poznań. Wejdź do bazy danych, żeby sprawdzić.';
+          mail('meetnight@meetnight.pl', 'Offsight Firma', $message);
+
 
           return $this->redirectToRoute('poznan');
         }
 
      return $this->render('default/poznan.html.twig', ['form' => $formJoin->createView()]);
     }
-  
+
 
     /**
      * @Route("/onas", name="onas")
@@ -59,22 +62,23 @@ class DefaultController extends Controller
      public function ContactFormAction(Request $request){
        $post = new ContactForm();
        $form = $this->createFormBuilder($post)
-                   ->setMethod('GET')
+                   ->setMethod('POST')
                    ->add('email','text',['label' => 'Adres e-mail'])
                    ->add('name','text', ['label' => 'Imię'])
                    ->add('message','text', ['label' => 'Wiadomość'])
                    ->add('save','submit', ['label' => 'Wyślij'])
                    ->getForm();
-      $email = 'form[email]';
-      $name = 'form[name]';
-      $message = 'form[message]';
-      mail('meetnight@meetnight.pl', 'Offsight Kontakt', 'Wiadomość');
+
+
+
        $form->handleRequest($request);
            if ($form->isSubmitted()) {
            $post = $form->getData();
            $em = $this->getDoctrine()->getManager();
            $em->persist($post);
            $em->flush();
+           $message='Dostałeś nowa wiadomość. Wejdź do bazy danych, żeby sprawdzić kto się do Ciebie odezwał';
+           mail('meetnight@meetnight.pl', 'Offsight Kontakt', $message);
 
            return $this->redirectToRoute('onas');
          }

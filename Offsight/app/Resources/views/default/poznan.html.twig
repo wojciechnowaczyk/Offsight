@@ -37,29 +37,26 @@
           </ul>
           </p>
           <p>Koszt: 300 złotych netto / zespół</p>
-          <button class="RegistrationButton" type="button"><a target="_blank" href="https://goo.gl/forms/P3BlBWMcpTa61UZY2">Zgłoś się</a></button>
-          <div id="ContactForm" style="width: 100%; height: 200px; position: absolute; top: 200vh">
-            {{ form_start(form) }}
-            {{ form_widget(form) }}
-            {{ form_end(form) }}
-          </div>
-        </div>
-        <div class="PoznanForm">
-          <p class="PoznanParagraph">
-            Jak się zgłosić?
-          </p>
+          <button class="RegistrationButton" type="button"><a target="_blank" href="#ContactForm">Zgłoś się</a></button>
+
         </div>
         <div class="PoznanMap">
-          <div>
-
           <p class="PoznanParagraph">
             Gdzie?
           </p>
-         </div>
+
          <div>
 
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1216.95448341497!2d16.92435509811735!3d52.40832605265624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd8b8d15cc295ac5b!2sMalta+Festival+Pozna%C5%84!5e0!3m2!1spl!2spl!4v1502057229892" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+        </div>
+        <div id="ContactForm" style="width: 100%; height: 200px; position: absolute; top: 250vh">
+          <p class="PoznanParagraph">
+            Jak się zgłosić?
+          </p>
+          {{ form_start(form) }}
+          {{ form_widget(form) }}
+          {{ form_end(form) }}
         </div>
         {% block javascripts %}{% endblock %}
     </body>
