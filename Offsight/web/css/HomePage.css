@@ -25,11 +25,11 @@ body{
 
 }
 
-.FirstLocationHeader{
+.FirstLocationHeader, .SecondLocationHeader, .ThirdLocationHeader, .AboutUsHeader{
   width: 50%;
   text-align: center;
   background-color: rgba(255,103,0, 0.7);
-  margin: 160px;
+  margin: 200px;
 
 }
 .SecondLocation{
@@ -52,13 +52,7 @@ body{
   background-position: center;
 
 }
-.SecondLocationHeader{
 
-  width: 50%;
-  text-align: center;
-  background-color: rgba(255,103,0, 0.7);
-  margin: 160px;
-}
 .ThirdLocation{
 
   display: flex;
@@ -80,13 +74,7 @@ body{
   background-position: center;
 
 }
-.ThirdLocationHeader{
 
-  width: 50%;
-  text-align: center;
-  background-color: rgba(255,103,0, 0.7);
-  margin: 160px;
-}
 .LocationHeader{
   font-family: 'Oswald';
   font-size: 50px;
@@ -124,12 +112,7 @@ body{
   background-size: cover;
   background-position: center;
 }
-.AboutUsHeader{
-  width: 50%;
-  text-align: center;
-  background-color: rgba(255,103,0, 0.7);
-  margin: 160px;
-}
+
 .AboutHeader{
   font-family: 'Oswald';
   font-size: 50px;
@@ -142,4 +125,8 @@ a{
 
 a:hover{
   color: white;
+}
+
+.MoreButtonParagraph{
+  margin-bottom: 40px;
 }
