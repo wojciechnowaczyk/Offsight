@@ -48,7 +48,7 @@ class DefaultController extends Controller
           //$message='Nowa firma zapisała się na Offsight Poznań. Wejdź do bazy danych, żeby sprawdzić.';
           //mail('meetnight@meetnight.pl', 'Offsight Firma', $message);
 
-          $to = 'offsight@meetnight.pl';
+          $to = 'offsight@offsight.pl';
 
           $subject = 'Offsight | Nowa firma | Poznań';
 
@@ -90,8 +90,8 @@ class DefaultController extends Controller
 
           $subject2 = 'Offsight | Rejestracja';
 
-          $headers2 = "From: offsight@meetnight.pl\r\n";
-          $headers2 .= "Reply-To: offsight@meetnight.pl\r\n";
+          $headers2 = "From: offsight@offsight.pl\r\n";
+          $headers2 .= "Reply-To: offsight@offsight.pl\r\n";
           $headers2 .= "Content-Type: text/html";
 
           $message2 = '<html><body>';
@@ -100,7 +100,7 @@ class DefaultController extends Controller
           $message2 .= '<p>';
           $message2 .= 'Dziekujęmy za rejestrację firmy ';
           $message2 .= $post->getCompany();
-          $message2 .= ' na wydarzenie Offsight Poznań. Wkrótce się z Państwem skontaktujemy';
+          $message2 .= ' na wydarzenie Offsight Poznań. Wkrótce się z Państwem skontaktujemy.';
           $message2 .= '</p>';
           $message2 .= '<p>';
           $message2 .= 'W przypadku pilnego kontaktu jesteśmy dostępni pod numerami telefonów:';
@@ -109,7 +109,7 @@ class DefaultController extends Controller
           $message2 .= '+48 795119439 - Wojciech Nowaczyk';
           $message2 .= '</p>';
           $message2 .= '<p>';
-          $message2 .= '645654654 - Jan Radomski';
+          $message2 .= '+48 500031769 - Jan Radomski';
           $message2 .= '</p>';
           $message2 .= '<p>';
           $message2 .= 'Pozdrawiamy';
@@ -163,10 +163,10 @@ class DefaultController extends Controller
            $message3 .= '<img src="http://offsight.meetnight.pl/img/header.png" alt="Offsight" />';
            $message3 .= '<div style="text-align:center; width: 100%; font-size: 20px; line-height: 30px ">';
            $message3 .= '<p>';
-           $message3 .= 'Dziekujęmy za skontaktowanie się z nami';
+           $message3 .= 'Dziekujęmy za skontaktowanie się z nami.';
            $message3 .= '</p>';
            $message3 .= '<p>';
-           $message3 .= 'Wkrótce odpowiemy na Twoją wiadomość';
+           $message3 .= 'Wkrótce odpowiemy na Twoją wiadomość.';
            $message3 .= '</p>';
            $message3 .= '<p>';
            $message3 .= 'Pozdrawiamy';
