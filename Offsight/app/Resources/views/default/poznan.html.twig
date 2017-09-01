@@ -41,7 +41,7 @@
 
         </div>
         <div class="PoznanMap">
-          <p class="PoznanParagraph">
+          <p class="PoznanParagraphWhere">
             Gdzie?
           </p>
 
@@ -50,13 +50,24 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1216.95448341497!2d16.92435509811735!3d52.40832605265624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd8b8d15cc295ac5b!2sMalta+Festival+Pozna%C5%84!5e0!3m2!1spl!2spl!4v1502057229892" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         </div>
-        <div id="ContactForm">
-          <p class="PoznanParagraph">
-            Jak się zgłosić?
-          </p>
-          {{ form_start(form) }}
-          {{ form_widget(form) }}
-          {{ form_end(form) }}
+        <p class="PoznanParagraph">
+          Jak się zgłosić?
+        </p>
+        <div class="FormBox">
+          <h1 class="FormHeader">FORMULARZ ZGŁOSZENIOWY</h1>
+          <div id="ContactForm">
+
+            {{ form_start(form) }}
+            {{ form_widget(form.company, {'attr': {'placeholder': 'Nazwa firmy'} }) }}
+            {{ form_widget(form.name, {'attr': {'placeholder': 'Imię i nazwisko osoby kontaktowej'} }) }}
+            {{ form_widget(form.phone, {'attr': {'placeholder': 'Telefon osoby kontaktowej'} }) }}
+            {{ form_widget(form.email, {'attr': {'placeholder': 'Adres e-mail osoby kontaktowej'} }) }}
+            {{ form_widget(form.teams, {'attr': {'placeholder': 'Liczba zgłoszonych zespołów (koszt zgłoszenia jednego zespołu: 300 zł netto)'} }) }}
+            {{ form_widget(form.invoice, {'attr': {'placeholder': 'Dane do faktury (nazwa firmy, adres oraz NIP)'} }) }}
+            {{ form_widget(form.payment, {'attr': {'placeholder': 'Termin płatności'} }) }}
+            {{ form_end(form) }}
+
+          </div>
         </div>
         {% block javascripts %}{% endblock %}
     </body>

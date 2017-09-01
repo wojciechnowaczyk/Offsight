@@ -65,10 +65,15 @@
           </div>
           </div>
         </div>
-        <div id="ContactForm" style="width: 100%; height: 200px; position: absolute; top: 200vh">
-          {{ form_start(form) }}
-          {{ form_widget(form) }}
-          {{ form_end(form) }}
+        <div class="ContactBox">
+          <h1 class="ContactUsHeader">SKONTAKTUJ SIĘ Z NAMI</h1>
+          <div id="ContactForm" >
+            {{ form_start(form) }}
+            {{ form_widget(form.email, {'attr': {'placeholder': 'Adres e-mail'} }) }}
+            {{ form_widget(form.name, {'attr': {'placeholder': 'Imię i nazwisko'} }) }}
+            {{ form_widget(form.message, {'attr': {'placeholder': 'Wiadomość'} }) }}
+            {{ form_end(form) }}
+          </div>
         </div>
 
 

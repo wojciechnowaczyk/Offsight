@@ -1,3 +1,6 @@
+body{
+  margin: 0px;
+}
 .FirstLocation{
   /*border: 5px black solid;*/
 
@@ -5,11 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*background-color: orange;*/
+
   width: 100%;
-  min-height: 100vh;
-  max-height: 100%;
-  position: absolute;
+
+
   top: 0;
   left: 0;
   margin: 0 auto;
@@ -27,6 +29,7 @@
   width: 50%;
   text-align: center;
   background-color: rgba(255,103,0, 0.7);
+  margin: 160px;
 
 }
 .SecondLocation{
@@ -35,10 +38,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
-  max-height: 100%;
-  position: absolute;
-  top: 100vh;
+
+
+
   left: 0;
   margin: 0 auto;
   background-image: url('/img/playstation2.jpg');
@@ -55,6 +57,7 @@
   width: 50%;
   text-align: center;
   background-color: rgba(255,103,0, 0.7);
+  margin: 160px;
 }
 .ThirdLocation{
 
@@ -63,10 +66,9 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  max-height: 100%;
-  position: absolute;
-  top: 200vh;
+
+
+
   left: 0;
   margin: 0 auto;
   background-image: url('/img/playstation3.jpg');
@@ -83,6 +85,7 @@
   width: 50%;
   text-align: center;
   background-color: rgba(255,103,0, 0.7);
+  margin: 160px;
 }
 .LocationHeader{
   font-family: 'Oswald';
@@ -108,10 +111,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
-  max-height: 100%;
-  position: absolute;
-  top: 300vh;
+
+
+
   left: 0;
   margin: 0 auto;
   background-image: url('/img/field.jpg');
@@ -126,6 +128,7 @@
   width: 50%;
   text-align: center;
   background-color: rgba(255,103,0, 0.7);
+  margin: 160px;
 }
 .AboutHeader{
   font-family: 'Oswald';

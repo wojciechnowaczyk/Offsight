@@ -1,11 +1,13 @@
+body{
+  margin: 0px;
+  font-family: 'Oswald';
+
+}
 .PoznanHeader{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 50vh;
-  max-height: 10%;
-  position: absolute;
   top: 0;
   left: 0;
   margin: 0 auto;
@@ -15,37 +17,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*background-color: orange;*/
+
   width: 100%;
-  min-height: 50vh;
-  max-height: 100%;
-  position: absolute;
-  top: 50vh;
+
   left: 0;
   margin: 0 auto;
   background-size: 100%;
+  height: 300px;
 }
 
 .SecondPerson{
   display: flex;
   align-items: center;
   justify-content: center;
-  /*background-color: orange;*/
+
   width: 100%;
-  min-height: 50vh;
-  max-height: 100%;
-  position: absolute;
-  top: 100vh;
+
   left: 0;
   margin: 0 auto;
   background-size: 100%;
+  height: 300px;
 }
 
 .FirstLeft{
   width: 50%;
   float: left;
-  min-height: 50vh;
-  max-height: 100%;
+  height: 100%;
   background-color: rgb(244, 204, 11);
   align-items: center;
   justify-content: center;
@@ -53,8 +50,7 @@
 .FirstRight{
   width: 50%;
   float: right;
-  min-height: 50vh;
-  max-height: 100%;
+  height: 100%;
   background-color: rgb(255, 103, 0);
   display: flex;
   align-items: center;
@@ -63,8 +59,7 @@
 .SecondLeft{
   width: 50%;
   float: left;
-  min-height: 50vh;
-  max-height: 100%;
+  height: 100%;
   background-color: rgb(255, 103, 0);
   display: flex;
   align-items: center;
@@ -73,8 +68,7 @@
 .SecondRight{
   width: 50%;
   float: right;
-  min-height: 50vh;
-  max-height: 100%;
+  height: 100%;
   background-color: rgb(244, 204, 11);
   align-items: center;
   justify-content: center;
@@ -107,14 +101,69 @@ text-decoration: none;
 }
 
 .PersonalPhotos{
-  width: 40%;
-  height: 40%;
+
+  width: 35%;
+
+}
+#ContactForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
 
 }
 
-.ContactForm{
-  position: absolute;
+form{
+  text-align: center;
   width: 100%;
+}
+input{
+  width: 50%;
+  margin: 20px;
+  border: 5px solid #FF6700;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+label{
+  visibility: hidden;
+}
+button{
+  font-family: 'Oswald';
+  font-size: 25px;
+  padding: 15px 50px;
+  margin-bottom: 20px;
+  background-color: rgb(244, 204, 11);
+  border: 5px solid rgb(244, 204, 11);
+  font-weight: bold;
+}
+button:hover{
+  color: white;
+  cursor:pointer;
+}
+#form_message{
   height: 150px;
-  top: 170vh;
+}
+
+.ContactUsHeader{
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
+.ContactBox{
+  width: 100%;
+  display: inline-block;
+  left: 0;
+  margin: 0 auto;
+  background-image: url('/img/field.jpg');
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
 }
