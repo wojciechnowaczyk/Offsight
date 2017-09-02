@@ -79,13 +79,13 @@ body{
   text-align: center;
 }
 .social-nav{
-  text-align: center;
-  margin-left: 35%;
   list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    margin-left: 35%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .social-nav li{
   float: left;
@@ -93,11 +93,10 @@ body{
 
 .social-nav li a{
   display: block;
-
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .PersonalPhotos{
