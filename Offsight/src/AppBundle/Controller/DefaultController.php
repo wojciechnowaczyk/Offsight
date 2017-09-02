@@ -203,7 +203,7 @@ class DefaultController extends Controller
            mail($to4, $subject4, $message4, $headers4);
 
 
-           return $this->redirectToRoute('onas');
+           return $this->redirectToRoute('kontakt');
          }
 
       return $this->render('default/aboutus.html.twig', ['form' => $form->createView()]);
@@ -229,4 +229,13 @@ class DefaultController extends Controller
         public function registrationPage(Request $request){
           return $this->render('default/registration.html.twig', []);
         }
+
+        /**
+         * @Route("/kontakt", name="kontakt")
+         */
+         public function contactPage(Request $request){
+           return $this->render('default/contact.html.twig', []);
+         }
+
+         
 }

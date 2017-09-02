@@ -6,7 +6,7 @@
         <title>{% block title %}Offsight{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="" />
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/LodzPage.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/ContactPage.css') }}" />
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7A9RN0emXJmj7OJjZG3IzxVPGXACcSRs&callback=initMap" type="text/javascript"></script>
 
@@ -20,17 +20,23 @@
           <a href="{{path('onas')}}"><img src='/img/contact.png' /></a>
         </div>
       </div>
-        <div class="LodzHeader">
+        <div class="RegistrationHeader">
           <a href={{path('home')}}><img src="/img/header.png" class="HeaderImage" /></a>
         </div>
-        <div class="LodzInfo">
-          <p class="LodzParagraph">
-            Wkrótce więcej informacji
+        <div class="RegistrationInfo">
+          <p class="RegistrationParagraph">
+            Dziękujemy za skontaktowanie się z nami.
+          </p>
+          <p class="RegistrationParagraph">
+            Wkrótce odpowiemy na wiadomość.
+          </p>
+          <p class="RegistrationParagraph">
+            Zespół Offsight
           </p>
           <p class="MoreButtonParagraph">
-            <a class="RegistrationButton" href="{{ path('home') }}">Powrót do strony głównej</a>
+            <a class="RegistrationButton" href="{{ path('onas') }}">Powrót</a>
           </p>
-          <p class="LodzDescription">
+          <p class="RegistrationDescription">
           </p>
 
         </div>

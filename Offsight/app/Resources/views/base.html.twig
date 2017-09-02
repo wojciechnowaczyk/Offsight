@@ -5,9 +5,20 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/BasePage.css') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+      {% block menu %}
+        <div class="InfoBox">
+          <div class="HomeIcon">
+            <a href="{{path('home')}}"><img src='/img/home.png' /></a>
+          </div>
+          <div class="ContactIcon">
+            <a href="{{path('onas')}}"><img src='/img/contact.png' /></a>
+          </div>
+
+        </div>
+      {% endblock %}
+      {% block content%}{% endblock %}
     </body>
 </html>

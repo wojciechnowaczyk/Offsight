@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,7 +21,16 @@
         </script>
     </head>
     <body>
-        <div class="FirstLocation">
+
+      <div class="InfoBox">
+        <div class="HomeIcon">
+          <a href="{{path('home')}}"><img src='/img/home.png' /></a>
+        </div>
+        <div class="ContactIcon">
+          <a href="{{path('onas')}}"><img src='/img/contact.png' /></a>
+        </div>
+      </div>
+      <div class="FirstLocation">
           <div class="FirstLocationHeader">
             <h1 class="LocationHeader">POZNAŃ</h1>
             <p class="DateParagraph">20.10.2017</p>
@@ -54,6 +65,7 @@
             </p>
           </div>
         </div>
-        {% block javascripts %}{% endblock %}
+
     </body>
+
 </html>
