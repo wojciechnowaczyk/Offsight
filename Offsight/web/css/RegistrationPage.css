@@ -1,0 +1,57 @@
+body{
+  margin: 0px;
+  font-family: 'Oswald';
+}
+.RegistrationHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: white;
+}
+.RegistrationInfo{
+  width: 100%;
+  margin-bottom: 100px !important;
+  left: 0;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
+.RegistrationParagraph{
+  font-family: 'Oswald';
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+.RegistrationDescription{
+  font-family: 'Oswald';
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 25px;
+}
+
+.RegistrationButton{
+  font-family: 'Oswald';
+  font-size: 25px;
+  padding: 15px 50px;
+  margin-bottom: 20px;
+  background-color: rgb(244, 204, 11);
+  border: 5px solid rgb(244, 204, 11);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+}

@@ -123,7 +123,7 @@ class DefaultController extends Controller
 
 
 
-          return $this->redirectToRoute('poznan');
+          return $this->redirectToRoute('rejestracja');
         }
 
      return $this->render('default/poznan.html.twig', ['form' => $formJoin->createView()]);
@@ -222,4 +222,11 @@ class DefaultController extends Controller
        public function lodzPage(Request $request){
          return $this->render('default/lodz.html.twig', []);
        }
+
+       /**
+        * @Route("/rejestracja", name="rejestracja")
+        */
+        public function registrationPage(Request $request){
+          return $this->render('default/registration.html.twig', []);
+        }
 }
