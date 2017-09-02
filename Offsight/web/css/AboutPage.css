@@ -193,3 +193,17 @@ button:hover{
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 700px){
+  input{
+    width: 80%;
+  }
+  button{
+    font-size: 40px;
+  }
+  .SocialNav{
+    display: none;
+  }
+  .PersonalPhotos{
+    width: 80%;
+  }
+}

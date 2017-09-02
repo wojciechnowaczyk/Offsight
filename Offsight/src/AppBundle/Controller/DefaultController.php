@@ -155,8 +155,8 @@ class DefaultController extends Controller
 
            $subject3 = 'Offsight | Kontakt';
 
-           $headers3 = "From: offsight@meetnight.pl\r\n";
-           $headers3 .= "Reply-To: offsight@meetnight.pl\r\n";
+           $headers3 = "From: offsight@offsight.pl\r\n";
+           $headers3 .= "Reply-To: offsight@offsight.pl\r\n";
            $headers3 .= "Content-Type: text/html";
 
            $message3 = '<html><body>';
@@ -178,12 +178,12 @@ class DefaultController extends Controller
            $message3 .= "</body></html>";
            mail($to3, $subject3, $message3, $headers3);
 
-           $to4 = 'offsight@meetnight.pl';
+           $to4 = 'offsight@offsight.pl';
 
            $subject4 = 'Offsight | Kontakt';
 
-           $headers4 = "From: offsight@meetnight.pl\r\n";
-           $headers4 .= "Reply-To: offsight@meetnight.pl\r\n";
+           $headers4 = "From: offsight@offsight.pl\r\n";
+           $headers4 .= "Reply-To: offsight@offsight.pl\r\n";
            $headers4 .= "Content-Type: text/html";
 
            $message4 = '<html><body>';
@@ -237,5 +237,5 @@ class DefaultController extends Controller
            return $this->render('default/contact.html.twig', []);
          }
 
-         
+
 }
