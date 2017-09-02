@@ -1,0 +1,33 @@
+{% block body%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Offsight{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/LodzPage.css') }}" />
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7A9RN0emXJmj7OJjZG3IzxVPGXACcSRs&callback=initMap" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div class="LodzHeader">
+          <a href={{path('home')}}><img src="/img/header.png" class="HeaderImage" /></a>
+        </div>
+        <div class="LodzInfo">
+          <p class="LodzParagraph">
+            Wkrótce więcej informacji
+          </p>
+          <p class="MoreButtonParagraph">
+            <a class="RegistrationButton" href="{{ path('home') }}">Powrót do strony głównej</a>
+          </p>
+          <p class="LodzDescription">
+          </p>
+
+        </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
+
+{% endblock %}

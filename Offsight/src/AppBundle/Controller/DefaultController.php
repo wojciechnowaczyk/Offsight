@@ -208,4 +208,18 @@ class DefaultController extends Controller
 
       return $this->render('default/aboutus.html.twig', ['form' => $form->createView()]);
      }
+
+     /**
+      * @Route("/wroclaw", name="wroclaw")
+      */
+      public function wroclawPage(Request $request){
+        return $this->render('default/wroclaw.html.twig', []);
+      }
+
+      /**
+       * @Route("/lodz", name="lodz")
+       */
+       public function lodzPage(Request $request){
+         return $this->render('default/lodz.html.twig', []);
+       }
 }
